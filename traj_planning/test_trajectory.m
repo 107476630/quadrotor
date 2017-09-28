@@ -108,7 +108,7 @@ for iter = 1:max_iter
         QP{qn}.UpdateQuadPlot(x{qn}, [desired_state.pos; desired_state.vel], time + cstep);
         if OUTPUT_TO_VIDEO == 1
             im = frame2im(getframe(gcf));
-            writeVideo(v,im);
+    %        writeVideo(v,im);
         end
     end
 

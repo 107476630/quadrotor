@@ -106,7 +106,7 @@ for iter = 1:max_iter
         set(h_title, 'String', sprintf('iteration: %d, time: %4.2f', iter, time + cstep))
         if OUTPUT_TO_VIDEO == 1
             im = frame2im(getframe(gcf));
-            writeVideo(v,im);
+ %           writeVideo(v,im);
         end
     end
     time = time + cstep; % Update simulation time
